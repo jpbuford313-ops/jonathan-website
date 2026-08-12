@@ -1,227 +1,160 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mode="red">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jonathan Buford is a Detroit-based cybersecurity graduate focused on SOC operations, incident response, risk assessment, and security monitoring.">
-  <meta name="theme-color" content="#070b0f">
-  <title>Jonathan Buford | Cybersecurity Professional</title>
+  <meta name="description" content="Jonathan Buford — cybersecurity graduate connecting offensive testing with defensive security operations.">
+  <meta name="theme-color" content="#08070b">
+  <title>Jonathan Buford // Purple Team Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#stage">Skip to portfolio</a>
+  <div class="atmosphere" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="scan-field" aria-hidden="true"></div>
 
-  <header class="site-header" data-header>
-    <a class="brand" href="#home" aria-label="Jonathan Buford, home">
-      <span class="brand-mark" aria-hidden="true">JB</span>
-      <span class="brand-copy">JONATHAN <strong>BUFORD</strong></span>
+  <header class="topbar">
+    <a class="identity" href="#identity" data-go="0">
+      <span class="identity-mark">JB</span>
+      <span><b>JONATHAN BUFORD</b><small>PURPLE TEAM CANDIDATE</small></span>
     </a>
 
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-      <span class="sr-only">Toggle navigation</span>
-      <span></span><span></span>
-    </button>
-
-    <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Labs</a>
-      <a href="#certifications">Credentials</a>
-      <a class="nav-cta" href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main id="main-content">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="signal signal-one" aria-hidden="true"></div>
-      <div class="signal signal-two" aria-hidden="true"></div>
-
-      <div class="hero-content reveal">
-        <p class="eyebrow"><span class="status-dot"></span> Available for cybersecurity opportunities</p>
-        <p class="terminal-line" aria-hidden="true"><span>jonathan@security</span>:~$ launching career</p>
-        <h1 id="hero-title">Protecting what matters.<br><em>Ready for what’s next.</em></h1>
-        <p class="hero-summary">Cybersecurity graduate and experienced security professional bringing disciplined monitoring, incident reporting, risk awareness, and a calm response to high-stakes environments.</p>
-
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my labs <span aria-hidden="true">↘</span></a>
-          <a class="button button-secondary" href="May%20Resumes%20Jonathan%20Buford.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
-        </div>
-
-        <dl class="hero-stats" aria-label="Career highlights">
-          <div><dt>7+</dt><dd>Years in security</dd></div>
-          <div><dt>2026</dt><dd>Cybersecurity graduate</dd></div>
-          <div><dt>Detroit</dt><dd>Michigan based</dd></div>
-        </dl>
-      </div>
-
-      <div class="hero-visual reveal" data-delay="120">
-        <div class="portrait-frame">
-          <div class="portrait-label"><span>PROFILE_01</span><span>ACTIVE</span></div>
-          <img src="portrait.jpeg" alt="Portrait of Jonathan Buford" width="724" height="1086">
-          <div class="scan-line" aria-hidden="true"></div>
-          <div class="portrait-corner corner-one" aria-hidden="true"></div>
-          <div class="portrait-corner corner-two" aria-hidden="true"></div>
-        </div>
-        <div class="clearance-card" aria-label="Professional detail">
-          <span class="micro-label">QUALIFICATION</span>
-          <strong>Secret Security Clearance</strong>
-          <span>Security-minded. Mission-ready.</span>
-        </div>
-      </div>
-    </section>
-
-    <div class="ticker" aria-label="Core focus areas">
-      <div class="ticker-track">
-        <span>Incident response</span><i></i><span>Risk assessment</span><i></i><span>Network fundamentals</span><i></i><span>Security monitoring</span><i></i><span>Access control</span><i></i><span>Incident response</span><i></i><span>Risk assessment</span><i></i><span>Network fundamentals</span><i></i><span>Security monitoring</span><i></i><span>Access control</span><i></i>
-      </div>
+    <div class="mode-switch" role="group" aria-label="Choose security perspective">
+      <button type="button" data-mode-button="red" aria-pressed="true"><i></i><span>RED</span><small>BREAK</small></button>
+      <button class="switch-core" type="button" data-mode-button="purple" aria-pressed="false"><i></i><span>PURPLE</span><small>UNIFY</small></button>
+      <button type="button" data-mode-button="blue" aria-pressed="false"><i></i><span>BLUE</span><small>DEFEND</small></button>
     </div>
 
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="section-heading reveal">
-        <p class="section-index">01 / ABOUT</p>
-        <h2 id="about-title">Security experience,<br><em>now focused on cyber.</em></h2>
-      </div>
+    <button class="terminal-trigger" type="button" data-terminal-open><span>CONSOLE</span><kbd>⌘</kbd></button>
+  </header>
 
-      <div class="about-layout">
-        <div class="about-copy reveal">
-          <p class="lead">I’m Jonathan—a results-driven IT professional translating years of frontline security experience into a career in cybersecurity.</p>
-          <p>My background taught me how to assess risk, monitor for anomalies, document incidents clearly, enforce policy, and communicate calmly when the stakes are high. I strengthened that operational foundation with focused training in systems administration, networking, cloud basics, vulnerability management, penetration testing, and incident response.</p>
-          <p>I’m looking to contribute that combination of vigilance, critical thinking, and people-first communication to a SOC or entry-level cybersecurity team.</p>
-        </div>
+  <nav class="section-rail" aria-label="Portfolio stages">
+    <ol>
+      <li><button type="button" data-go="0"><span>00</span><i></i><b>Identity</b></button></li>
+      <li><button type="button" data-go="1"><span>01</span><i></i><b>Doctrine</b></button></li>
+      <li><button type="button" data-go="2"><span>02</span><i></i><b>Capabilities</b></button></li>
+      <li><button type="button" data-go="3"><span>03</span><i></i><b>Operations</b></button></li>
+      <li><button type="button" data-go="4"><span>04</span><i></i><b>Credentials</b></button></li>
+      <li><button type="button" data-go="5"><span>05</span><i></i><b>Connect</b></button></li>
+    </ol>
+  </nav>
 
-        <div class="timeline reveal" data-delay="100" aria-label="Experience and education timeline">
-          <article>
-            <span class="timeline-date">FEB 2026</span>
-            <div><h3>Business Information Technology Specialist</h3><p>DSDT College · Diploma granted</p></div>
-          </article>
-          <article>
-            <span class="timeline-date">2024—25</span>
-            <div><h3>Security Professional</h3><p>Allied Universal · Detroit, MI</p></div>
-          </article>
-          <article>
-            <span class="timeline-date">2019—24</span>
-            <div><h3>Security Officer</h3><p>DK Security · Troy, MI</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
-      <div class="section-heading reveal">
-        <p class="section-index">02 / CAPABILITIES</p>
-        <h2 id="skills-title">Built for the<br><em>security operations floor.</em></h2>
-        <p class="heading-note">A practical skill set shaped by cybersecurity coursework and real-world protective services.</p>
-      </div>
-
-      <div class="skills-grid">
-        <article class="skill-card reveal">
-          <span class="card-number">01</span><span class="skill-icon" aria-hidden="true">⌁</span>
-          <h3>Threat Monitoring</h3>
-          <p>Continuous observation, anomaly recognition, and timely escalation across physical and digital environments.</p>
-          <ul><li>Security monitoring</li><li>Event triage</li><li>CCTV operations</li></ul>
-        </article>
-        <article class="skill-card reveal" data-delay="60">
-          <span class="card-number">02</span><span class="skill-icon" aria-hidden="true">◎</span>
-          <h3>Risk & Vulnerability</h3>
-          <p>Identifying exposures, assessing impact, and supporting practical remediation based on risk.</p>
-          <ul><li>Vulnerability assessment</li><li>Risk management</li><li>Compliance awareness</li></ul>
-        </article>
-        <article class="skill-card reveal" data-delay="120">
-          <span class="card-number">03</span><span class="skill-icon" aria-hidden="true">↯</span>
-          <h3>Incident Response</h3>
-          <p>Clear documentation, methodical analysis, and composed communication throughout an incident lifecycle.</p>
-          <ul><li>Incident reporting</li><li>Escalation</li><li>Critical thinking</li></ul>
-        </article>
-        <article class="skill-card reveal" data-delay="180">
-          <span class="card-number">04</span><span class="skill-icon" aria-hidden="true">⌘</span>
-          <h3>IT Foundations</h3>
-          <p>Core knowledge across operating systems, infrastructure, connectivity, and cloud environments.</p>
-          <ul><li>Systems administration</li><li>Networking</li><li>Linux & cloud basics</li></ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading reveal">
-        <p class="section-index">03 / HANDS-ON LABS</p>
-        <h2 id="projects-title">Practice under<br><em>real-world pressure.</em></h2>
-        <p class="heading-note">Selected training scenarios demonstrating a repeatable, evidence-led approach to security work.</p>
-      </div>
-
-      <div class="project-list">
-        <article class="project-card reveal">
-          <div class="project-meta"><span>LAB_001</span><span>VULNERABILITY MANAGEMENT</span></div>
-          <div class="project-body">
-            <div><p class="project-type">Assessment workflow</p><h3>Vulnerability Assessment & Risk Prioritization</h3></div>
-            <p>Practiced identifying system weaknesses, evaluating business impact, and organizing findings into a risk-based remediation plan.</p>
+  <main class="stage" id="stage" tabindex="-1">
+    <section class="panel is-active" id="identity" data-panel data-phase-red="INITIAL ACCESS" data-phase-purple="SHARED CONTEXT" data-phase-blue="VISIBILITY" aria-labelledby="identity-title">
+      <div class="tactic-code"><span data-red="TA0001 // INITIAL_ACCESS" data-purple="PURPLE // SHARED_CONTEXT" data-blue="TA0007 // DISCOVERY">TA0001 // INITIAL_ACCESS</span></div>
+      <div class="panel-inner hero-layout">
+        <div class="hero-copy morph">
+          <p class="eyebrow"><i></i><span data-red="Adversary lens engaged" data-purple="Unified security lens engaged" data-blue="Defender lens engaged">Adversary lens engaged</span></p>
+          <p class="mode-stamp" data-mode-stamp>RED</p>
+          <h1 id="identity-title"><span data-red="Find the gap." data-purple="Bridge the gap." data-blue="See the signal.">Find the gap.</span><br><em data-red="Strengthen" data-purple="Unify" data-blue="Protect">Strengthen</em><br><strong data-red="the whole." data-purple="the mission." data-blue="the whole.">the whole.</strong></h1>
+          <p class="hero-summary" data-red="Cybersecurity graduate and veteran security professional learning to think like an attacker—so organizations can expose assumptions before adversaries do." data-purple="Cybersecurity graduate and veteran security professional connecting adversary thinking with operational defense—turning every test into stronger detection, response, and resilience." data-blue="Cybersecurity graduate and veteran security professional bringing disciplined monitoring, incident reporting, and risk awareness to the defense of modern organizations.">Cybersecurity graduate and veteran security professional learning to think like an attacker—so organizations can expose assumptions before adversaries do.</p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button" data-go="1"><span data-red="Begin intrusion path" data-purple="Begin unified path" data-blue="Begin defense path">Begin intrusion path</span><i>↳</i></button>
+            <a href="MayResumeJonathan.pdf" download>Download résumé <i>↓</i></a>
           </div>
-          <div class="project-tags"><span>Scanning concepts</span><span>Risk scoring</span><span>Reporting</span></div>
-        </article>
+        </div>
 
-        <article class="project-card reveal">
-          <div class="project-meta"><span>LAB_002</span><span>SECURITY OPERATIONS</span></div>
-          <div class="project-body">
-            <div><p class="project-type">Investigation workflow</p><h3>Security Event Triage & Incident Response</h3></div>
-            <p>Worked through alert review, evidence collection, incident classification, escalation, and clear documentation in a simulated response scenario.</p>
+        <div class="profile-system morph">
+          <div class="profile-frame">
+            <div class="profile-head"><span>SUBJECT_313</span><b data-red="TARGET LOCKED" data-purple="BRIDGE ACTIVE" data-blue="ASSET VERIFIED">TARGET LOCKED</b></div>
+            <div class="portrait">
+              <img src="portrait.jpeg" alt="Portrait of Jonathan Buford" width="724" height="1086">
+              <div class="target-reticle" aria-hidden="true"><i></i><i></i></div>
+              <div class="defense-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+            </div>
+            <dl><div><dt>EXPERIENCE</dt><dd>7+ YEARS</dd></div><div><dt>CLEARANCE</dt><dd>SECRET</dd></div><div><dt>STATUS</dt><dd>AVAILABLE</dd></div></dl>
           </div>
-          <div class="project-tags"><span>Event analysis</span><span>Triage</span><span>Incident reports</span></div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-meta"><span>LAB_003</span><span>NETWORK DEFENSE</span></div>
-          <div class="project-body">
-            <div><p class="project-type">Defense workflow</p><h3>Network Security & System Hardening</h3></div>
-            <p>Applied networking and systems fundamentals to map exposure, review access, reduce attack surface, and document defensive recommendations.</p>
-          </div>
-          <div class="project-tags"><span>Network basics</span><span>Access control</span><span>Hardening</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section credentials" id="certifications" aria-labelledby="credentials-title">
-      <div class="section-heading reveal">
-        <p class="section-index">04 / CREDENTIALS</p>
-        <h2 id="credentials-title">Training backed by<br><em>industry standards.</em></h2>
-      </div>
-
-      <div class="credentials-layout">
-        <article class="diploma-card reveal">
-          <span class="micro-label">COMPLETED · FEBRUARY 2026</span>
-          <div class="diploma-seal" aria-hidden="true">DSDT</div>
-          <h3>Business Information Technology Specialist Diploma</h3>
-          <p>Cybersecurity-focused program covering A+, Network+, Security+, CySA+, Linux+, PenTest+, and Cloud+ material.</p>
-          <span class="school">DSDT COLLEGE · DETROIT, MI</span>
-        </article>
-
-        <div class="cert-list reveal" data-delay="100">
-          <article><div><span class="cert-code">A+</span><h3>CompTIA A+</h3><p>Certification preparation</p></div><span class="cert-status">Target: Jul 2026</span></article>
-          <article><div><span class="cert-code">N+</span><h3>CompTIA Network+</h3><p>Certification preparation</p></div><span class="cert-status">Target: Jul 2026</span></article>
-          <article><div><span class="cert-code">S+</span><h3>CompTIA Security+</h3><p>Certification preparation</p></div><span class="cert-status">Target: Jul 2026</span></article>
+          <div class="purple-link"><span>OFFENSE</span><i></i><b>FEEDBACK LOOP</b><i></i><span>DEFENSE</span></div>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-glow" aria-hidden="true"></div>
-      <div class="contact-inner reveal">
-        <p class="section-index">05 / ESTABLISH CONTACT</p>
-        <h2 id="contact-title">Let’s secure<br><em>what comes next.</em></h2>
-        <p>I’m currently exploring entry-level cybersecurity and SOC opportunities in the Detroit area and beyond.</p>
-        <div class="contact-actions">
-          <a class="button button-primary" href="mailto:jpbuford30@yahoo.com">jpbuford30@yahoo.com <span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="tel:+13132091550">313.209.1550</a>
+    <section class="panel" id="doctrine" data-panel data-phase-red="RECONNAISSANCE" data-phase-purple="ALIGNMENT" data-phase-blue="CONTEXT" aria-labelledby="doctrine-title" aria-hidden="true">
+      <div class="tactic-code"><span data-red="TA0043 // RECONNAISSANCE" data-purple="MITRE × NIST // ALIGNMENT" data-blue="NIST // IDENTIFY">TA0043 // RECONNAISSANCE</span></div>
+      <div class="panel-inner doctrine-layout">
+        <div class="chapter morph"><p>01</p><span>DOCTRINE</span><h2 id="doctrine-title"><span data-red="Question every" data-purple="Connect every" data-blue="Understand every">Question every</span><br><em data-red="assumption." data-purple="lesson." data-blue="signal.">assumption.</em></h2></div>
+        <div class="doctrine-copy morph">
+          <p class="lead" data-red="An attacker asks: Where does trust fail?" data-purple="A purple team asks: What did the test teach us?" data-blue="A defender asks: What changed, and why?">An attacker asks: Where does trust fail?</p>
+          <p data-red="Jonathan’s security career began with access control, continuous observation, patrols, and incident documentation. Cybersecurity training transformed those instincts into technical curiosity—understanding systems, networks, vulnerabilities, and how controls can be tested ethically." data-purple="Jonathan combines an attacker’s curiosity with a defender’s discipline. His security background and technical training support a collaborative cycle: emulate realistic behavior, observe the evidence, communicate the gap, and improve the control." data-blue="Jonathan’s security career began with access control, continuous observation, patrols, and incident documentation. Cybersecurity training transformed those instincts into detection thinking—understanding systems, networks, evidence, and how incidents move from alert to resolution.">Jonathan’s security career began with access control, continuous observation, patrols, and incident documentation. Cybersecurity training transformed those instincts into technical curiosity—understanding systems, networks, vulnerabilities, and how controls can be tested ethically.</p>
+          <div class="doctrine-flow">
+            <article><span>01</span><b data-red="Observe" data-purple="Emulate" data-blue="Monitor">Observe</b><small data-red="Map the environment" data-purple="Create a safe test" data-blue="Establish the baseline">Map the environment</small></article>
+            <i>→</i>
+            <article><span>02</span><b data-red="Challenge" data-purple="Measure" data-blue="Investigate">Challenge</b><small data-red="Test the controls" data-purple="Compare action to signal" data-blue="Correlate the evidence">Test the controls</small></article>
+            <i>→</i>
+            <article><span>03</span><b data-red="Report" data-purple="Improve" data-blue="Respond">Report</b><small data-red="Make risk actionable" data-purple="Close the feedback loop" data-blue="Contain and improve">Make risk actionable</small></article>
+          </div>
+          <div class="purple-principle"><i></i><div><span>PURPLE PRINCIPLE</span><b>Attack insight becomes defense intelligence.</b></div></div>
         </div>
-        <p class="response-note"><span class="status-dot"></span> Open to full-time roles · Ready to connect</p>
+      </div>
+    </section>
+
+    <section class="panel" id="capabilities" data-panel data-phase-red="CAPABILITY DEVELOPMENT" data-phase-purple="CROSS-FUNCTIONAL" data-phase-blue="SECURITY OPERATIONS" aria-labelledby="capabilities-title" aria-hidden="true">
+      <div class="tactic-code"><span data-red="TA0042 // RESOURCE_DEVELOPMENT" data-purple="PURPLE // CROSS_FUNCTIONAL_CAPABILITY" data-blue="NIST // PROTECT_DETECT">TA0042 // RESOURCE_DEVELOPMENT</span></div>
+      <div class="panel-inner capability-layout">
+        <div class="section-head morph"><div><p>02</p><span>CAPABILITIES</span></div><h2 id="capabilities-title"><span data-red="Offensive" data-purple="Unified" data-blue="Defensive">Offensive</span><br><em>readiness.</em></h2><p data-red="Foundations for ethical testing, exposure analysis, and attacker-minded problem solving." data-purple="Shared capabilities that connect safe adversary simulation to stronger monitoring, response, and risk decisions." data-blue="Foundations for monitoring, triage, hardening, and evidence-led incident response.">Foundations for ethical testing, exposure analysis, and attacker-minded problem solving.</p></div>
+        <div class="cap-grid morph">
+          <article><span>01</span><i>VUL</i><h3 data-red="Vulnerability Discovery" data-purple="Vulnerability Lifecycle" data-blue="Vulnerability Management">Vulnerability Discovery</h3><p data-red="Identify weaknesses and evaluate exploitable paths." data-purple="Discover, validate, prioritize, remediate, and retest." data-blue="Prioritize findings and drive risk-based remediation.">Identify weaknesses and evaluate exploitable paths.</p><b data-red="ENUMERATE" data-purple="CLOSE THE LOOP" data-blue="PRIORITIZE">ENUMERATE</b></article>
+          <article><span>02</span><i>NET</i><h3 data-red="Network Recon" data-purple="Network Visibility" data-blue="Network Monitoring">Network Recon</h3><p data-red="Map services, exposure, connectivity, and trust." data-purple="Pair attack-surface knowledge with traffic visibility." data-blue="Understand traffic, baselines, and anomalous behavior.">Map services, exposure, connectivity, and trust.</p><b data-red="DISCOVER" data-purple="MAP ↔ MONITOR" data-blue="DETECT">DISCOVER</b></article>
+          <article><span>03</span><i>LNX</i><h3 data-red="Systems Enumeration" data-purple="Systems Assurance" data-blue="Systems Administration">Systems Enumeration</h3><p data-red="Examine accounts, services, configuration, and attack surface." data-purple="Inspect configuration, harden exposure, and verify change." data-blue="Maintain accounts, services, configuration, and logs.">Examine accounts, services, configuration, and attack surface.</p><b data-red="INSPECT" data-purple="TEST ↔ HARDEN" data-blue="HARDEN">INSPECT</b></article>
+          <article><span>04</span><i>PTX</i><h3 data-red="Penetration Testing Basics" data-purple="Adversary-Informed Defense" data-blue="Control Validation">Penetration Testing Basics</h3><p data-red="Follow ethical scope to safely validate weaknesses." data-purple="Use safe simulation to measure whether controls work." data-blue="Use adversary behavior to verify defensive controls.">Follow ethical scope to safely validate weaknesses.</p><b data-red="VALIDATE" data-purple="EMULATE ↔ VERIFY" data-blue="VERIFY">VALIDATE</b></article>
+          <article><span>05</span><i>IR</i><h3 data-red="Attack Documentation" data-purple="Detection-to-Response" data-blue="Incident Response">Attack Documentation</h3><p data-red="Record evidence, impact, and reproduction steps clearly." data-purple="Translate attack artifacts into triage and response insight." data-blue="Triage, document, escalate, and communicate calmly.">Record evidence, impact, and reproduction steps clearly.</p><b data-red="REPORT" data-purple="SIGNAL ↔ ACTION" data-blue="RESPOND">REPORT</b></article>
+          <article><span>06</span><i>RSK</i><h3 data-red="Risk Exploitation Context" data-purple="Risk Translation" data-blue="Risk & Compliance">Risk Exploitation Context</h3><p data-red="Connect technical paths to realistic organizational impact." data-purple="Turn both attack paths and defensive evidence into priorities." data-blue="Connect technical evidence to policy and operational risk.">Connect technical paths to realistic organizational impact.</p><b data-red="IMPACT" data-purple="PROVE ↔ GOVERN" data-blue="GOVERN">IMPACT</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="operations" data-panel data-phase-red="EMULATION" data-phase-purple="VALIDATION LOOP" data-phase-blue="RESPONSE" aria-labelledby="operations-title" aria-hidden="true">
+      <div class="tactic-code"><span data-red="PURPLE // ADVERSARY_EMULATION" data-purple="PURPLE // EMULATE_MEASURE_IMPROVE" data-blue="PURPLE // DETECTION_ENGINEERING">PURPLE // ADVERSARY_EMULATION</span></div>
+      <div class="panel-inner operations-layout">
+        <div class="section-head morph"><div><p>03</p><span>LAB OPERATIONS</span></div><h2 id="operations-title"><span data-red="Attack." data-purple="Collaborate." data-blue="Detect.">Attack.</span><br><em data-red="Learn. Improve." data-purple="Measure. Improve." data-blue="Contain. Improve.">Learn. Improve.</em></h2><p>Controlled training scenarios demonstrating repeatable security thinking—not production client engagements.</p></div>
+        <div class="operation-grid morph">
+          <article><header><span>LAB_001</span><b data-red="OFFENSE" data-purple="PURPLE LOOP" data-blue="DEFENSE">OFFENSE</b></header><h3 data-red="Attack Surface Review" data-purple="Exposure Validation Cycle" data-blue="Exposure Management">Attack Surface Review</h3><p data-red="Mapped accessible services, reviewed likely weaknesses, and translated findings into a prioritized remediation report." data-purple="Combined discovery and validation with risk prioritization, remediation guidance, and a retest mindset." data-blue="Reviewed exposed services, evaluated vulnerability impact, and organized defensive remediation by risk.">Mapped accessible services, reviewed likely weaknesses, and translated findings into a prioritized remediation report.</p><ol><li data-red="DISCOVER" data-purple="DISCOVER" data-blue="INVENTORY">DISCOVER</li><li data-red="ENUMERATE" data-purple="VALIDATE" data-blue="ASSESS">ENUMERATE</li><li data-red="VALIDATE" data-purple="REMEDIATE" data-blue="PRIORITIZE">VALIDATE</li><li>REPORT</li></ol></article>
+          <article><header><span>LAB_002</span><b data-red="OFFENSE" data-purple="PURPLE LOOP" data-blue="DEFENSE">OFFENSE</b></header><h3 data-red="Adversary Event Simulation" data-purple="Detection Validation Exercise" data-blue="Security Event Triage">Adversary Event Simulation</h3><p data-red="Approached a simulated event through attacker intent, observable artifacts, and the defensive response it should trigger." data-purple="Connected simulated adversary behavior to observable evidence, alert triage, escalation, and detection improvement." data-blue="Reviewed simulated evidence, classified the incident, documented findings, and followed an escalation path.">Approached a simulated event through attacker intent, observable artifacts, and the defensive response it should trigger.</p><ol><li data-red="EMULATE" data-purple="EMULATE" data-blue="ALERT">EMULATE</li><li data-red="OBSERVE" data-purple="DETECT" data-blue="TRIAGE">OBSERVE</li><li data-red="MEASURE" data-purple="MEASURE" data-blue="CONTAIN">MEASURE</li><li data-red="IMPROVE" data-purple="TUNE" data-blue="ESCALATE">IMPROVE</li></ol></article>
+          <article><header><span>LAB_003</span><b data-red="OFFENSE" data-purple="PURPLE LOOP" data-blue="DEFENSE">OFFENSE</b></header><h3 data-red="Control Evasion Review" data-purple="Control Effectiveness Review" data-blue="Network Defense Validation">Control Evasion Review</h3><p data-red="Used systems and network fundamentals to reason about gaps in access controls and surface defensive recommendations." data-purple="Used attacker reasoning and defensive baselines together to test access, harden exposure, and verify improvement." data-blue="Used systems and network fundamentals to review access, reduce attack surface, and document hardening steps.">Used systems and network fundamentals to reason about gaps in access controls and surface defensive recommendations.</p><ol><li data-red="PROBE" data-purple="BASELINE" data-blue="BASELINE">PROBE</li><li data-red="BYPASS" data-purple="CHALLENGE" data-blue="HARDEN">BYPASS</li><li>TEST</li><li>DOCUMENT</li></ol></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="credentials" data-panel data-phase-red="AUTHORIZATION" data-phase-purple="SHARED TRUST" data-phase-blue="TRUST" aria-labelledby="credentials-title" aria-hidden="true">
+      <div class="tactic-code"><span data-red="ACCESS // AUTHORIZED_TESTING" data-purple="ACCESS // SHARED_TRUST" data-blue="ACCESS // VERIFIED_IDENTITY">ACCESS // AUTHORIZED_TESTING</span></div>
+      <div class="panel-inner credentials-layout">
+        <div class="credential-copy morph"><p class="chapter-num">04</p><span>CREDENTIALS</span><h2 id="credentials-title">Built on<br><em>fundamentals.</em></h2><p>Technical coursework paired with years of real-world accountability, policy enforcement, and incident reporting.</p></div>
+        <div class="credential-system morph">
+          <article class="diploma"><span>VERIFIED · FEB 2026</span><div class="seal">DSDT<small>DETROIT</small></div><h3>Business Information Technology Specialist Diploma</h3><p>Coursework aligned with CompTIA A+, Network+, Security+, CySA+, Linux+, PenTest+, and Cloud+.</p></article>
+          <div class="certs"><article><i>A+</i><div><h3>CompTIA A+</h3><p>Certification target</p></div><b>JUL 2026</b></article><article><i>N+</i><div><h3>CompTIA Network+</h3><p>Certification target</p></div><b>JUL 2026</b></article><article><i>S+</i><div><h3>CompTIA Security+</h3><p>Certification target</p></div><b>JUL 2026</b></article><article class="clearance"><i>SC</i><div><h3>Secret Security Clearance</h3><p>Professional qualification</p></div><b>CONFIRMED</b></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="connect" data-panel data-phase-red="ESTABLISH CHANNEL" data-phase-purple="COLLABORATION" data-phase-blue="SECURE CHANNEL" aria-labelledby="connect-title" aria-hidden="true">
+      <div class="tactic-code"><span data-red="C2 // CONNECTION_REQUEST" data-purple="PURPLE // COLLABORATION_CHANNEL" data-blue="TLS // HANDSHAKE_READY">C2 // CONNECTION_REQUEST</span></div>
+      <div class="panel-inner connect-layout">
+        <div class="connect-copy morph">
+          <p class="chapter-num">05</p><span>CONNECT</span><h2 id="connect-title"><span data-red="Let’s test" data-purple="Let’s improve" data-blue="Let’s protect">Let’s test</span><br>what comes<br><em>next.</em></h2>
+          <p data-red="Seeking entry-level cybersecurity, vulnerability management, and offensive-security-adjacent opportunities." data-purple="Seeking entry-level cybersecurity and purple-team-minded opportunities where offensive curiosity and defensive discipline strengthen each other." data-blue="Seeking entry-level cybersecurity, SOC, monitoring, and incident-response opportunities.">Seeking entry-level cybersecurity, vulnerability management, and offensive-security-adjacent opportunities.</p>
+        </div>
+        <div class="contact-card morph"><header><span data-red="OUTBOUND CHANNEL" data-purple="COLLABORATION CHANNEL" data-blue="TRUSTED CHANNEL">OUTBOUND CHANNEL</span><b>READY</b></header><a href="mailto:jpbuford30@yahoo.com"><span>EMAIL</span><strong>jpbuford30@yahoo.com</strong><i>↗</i></a><a href="tel:+13132091550"><span>VOICE</span><strong>313.209.1550</strong><i>↗</i></a><!-- TODO ENTRYVECTOR: Replace the # below with the hosted EntryVector URL. --><a href="#" data-entryvector-link><span>RESOURCE</span><strong>Explore EntryVector</strong><i>↗</i></a><a href="assets/May Resumes Jonathan Buford.pdf" download><span>RÉSUMÉ</span><strong>Download PDF</strong><i>↓</i></a><footer><i></i><div><b>AVAILABLE FOR OPPORTUNITIES</b><small>Detroit, Michigan · Open to connect</small></div></footer></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <a class="brand" href="#home"><span class="brand-mark">JB</span><span class="brand-copy">JONATHAN <strong>BUFORD</strong></span></a>
-    <p>Cybersecurity professional · Detroit, Michigan</p>
-    <p>© <span data-year>2026</span> Jonathan Buford</p>
+  <footer class="bottom-bar">
+    <div><span>MODE</span><b data-footer-mode>RED TEAM</b></div>
+    <div class="progress"><i data-progress></i></div>
+    <div><b data-current>01</b><span>/ 06</span></div>
+    <p><kbd>R</kbd> RED <kbd>P</kbd> PURPLE <kbd>B</kbd> BLUE <kbd>↑</kbd><kbd>↓</kbd> NAVIGATE</p>
   </footer>
+
+  <dialog class="terminal" data-terminal aria-labelledby="terminal-title">
+    <div class="terminal-window">
+      <header><span id="terminal-title">PURPLE_BRIDGE // unified-console</span><b data-terminal-mode>RED CHANNEL</b><button type="button" data-terminal-close aria-label="Close console">×</button></header>
+      <div class="terminal-output" data-terminal-output role="log" aria-live="polite"><p class="system">Purple Bridge initialized. Two perspectives. One security mission.</p><p class="dim">Type <b>help</b> to enumerate commands.</p></div>
+      <form data-terminal-form autocomplete="off"><label class="sr-only" for="terminal-input">Console command</label><span data-prompt>red@purple:~$</span><input id="terminal-input" data-terminal-input autocomplete="off" autocapitalize="off" spellcheck="false"></form>
+      <footer><span><kbd>TAB</kbd> COMPLETE</span><span><kbd>ESC</kbd> CLOSE</span></footer>
+    </div>
+  </dialog>
+  <noscript><div class="noscript">This interactive portfolio needs JavaScript. <a href="assets/May Resumes Jonathan Buford.pdf">Open Jonathan’s résumé instead.</a></div></noscript>
 </body>
+</html>
 </html>
